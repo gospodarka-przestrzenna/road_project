@@ -1,0 +1,21 @@
+[general]
+name=ExamplePlugin
+description=DEScription rather Short.
+about = Detailed.
+	Multiline.
+	Description.
+	As long as possible.
+category= Choose proper category.
+version=1.0.0
+qgisMinimumVersion=2.8
+icon=images/icon.png
+author=Maciej Kamiński Politechnika Wrocławska
+email=kaminski.maciej@gmail.com
+tags= Choose some tags, split with commas
+homepage=https://github.com/mk45/gplp
+tracker=https://github.com/mk45/gplp/issues
+repository=https://github.com/mk45/gplp
+experimental=True
+deprecated=False
+changelog=Version 1.0.0
+    - Some changes
