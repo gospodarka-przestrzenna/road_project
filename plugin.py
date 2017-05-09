@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 ###############################################################################
-#
+#DANGER!!
 # Copyright (C) 2015 Maciej Kamiński (kaminski.maciej@gmail.com) Politechnika Wrocławska
 #
 # This source is free software; you can redistribute it and/or modify it under
@@ -23,10 +23,10 @@ __author__ = 'Maciej Kamiński Politechnika Wrocławska'
 from os import path
 from PyQt4.QtGui import QIcon,QMessageBox
 from example_plugin_action1 import Action1
-from example_plugin_action2 import Action2
-from example_plugin_action3 import Action3
+#from example_plugin_action2 import Action2
+#from example_plugin_action3 import Action3
 
-class ExamplePluginPlugin(object):
+class RoadProjectPlugin(object):
     def __init__(self,iface):
         self.iface=iface
         self.plugin_path=path.dirname(path.abspath(__file__))
@@ -36,8 +36,8 @@ class ExamplePluginPlugin(object):
 
         #adding actions
         self.menu_actions.append(Action1(self))
-        self.menu_actions.append(Action2(self))
-        self.menu_actions.append(Action3(self))
+        #self.menu_actions.append(Action2(self))
+        #self.menu_actions.append(Action3(self))
 
 
 
@@ -55,3 +55,4 @@ class ExamplePluginPlugin(object):
         """
         for action in self.menu_actions:
             self.iface.removePluginMenu(self.plugin_menu_entry,action)
+OD

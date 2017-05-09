@@ -32,7 +32,7 @@ class Action1(QAction):
     Action for opening dock widget for database connections
     """
     def __init__(self,plugin):
-        self.icon_path=path.join(plugin.plugin_path,'images','icon.png')
+        self.icon_path=path.join(plugin.plugin_path,'images','ikona.svg')
         self.qicon=QIcon(self.icon_path)
         super(Action1,self).__init__(self.qicon,"&Test action",plugin.iface.mainWindow())
         self.triggered.connect(self.run)

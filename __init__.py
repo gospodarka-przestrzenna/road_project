@@ -23,5 +23,5 @@ __author__ = 'Maciej Kamiński Politechnika Wrocławska'
 
 def classFactory(iface):
     """invoke plugin"""
-    from ExamplePlugin.plugin import ExamplePluginPlugin
-    return ExamplePluginPlugin(iface)
+    from road_project.plugin import RoadProjectPlugin
+    return RoadProjectPlugin(iface)
