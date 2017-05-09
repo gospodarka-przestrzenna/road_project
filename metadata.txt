@@ -1,6 +1,6 @@
 [general]
 name=ExamplePlugin
-description=DEScription rather Short.
+description=description rather short.
 about = Detailed.
 	Multiline.
 	Description.
@@ -19,3 +19,4 @@ experimental=True
 deprecated=False
 changelog=Version 1.0.0
     - Some changes
+

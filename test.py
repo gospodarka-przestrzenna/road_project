@@ -1,3 +1,3 @@
 
 Git Gud road project
-Ala ma kota
+Ala ma kota i psa.
