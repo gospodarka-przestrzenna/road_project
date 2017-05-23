@@ -18,7 +18,7 @@
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 #
 ###############################################################################
-__author__ = 'Maciej Kamiński Politechnika Wrocławska'
+__author__ = 'Maciej Kamiński Politechnika Wrocławska, Wawrzyniec Zipser, Tymon Dmochowski, Agnieszka Kriesel, Monika Totczyk'
 
 
 from PyQt4.QtGui import QIcon,QAction,QMessageBox,QApplication
@@ -34,7 +34,7 @@ class Action1(QAction):
     def __init__(self,plugin):
         self.icon_path=path.join(plugin.plugin_path,'images','ikona.svg')
         self.qicon=QIcon(self.icon_path)
-        super(Action1,self).__init__(self.qicon,"&Test action",plugin.iface.mainWindow())
+        super(Action1,self).__init__(self.qicon,"&Widen Roads",plugin.iface.mainWindow())
         self.triggered.connect(self.run)
 
         self.plugin=plugin
@@ -59,7 +59,7 @@ class Action1(QAction):
         print(line_layers)
 
         QMessageBox.information(self.plugin.iface.mainWindow(),
-                "Simple Title",
-                "Heyy First Plugin",
+                "Widen Roads",
+                "Create polygons based on line layer of roads adding specific width depending on the road type",
                 QMessageBox.Ok
                 )

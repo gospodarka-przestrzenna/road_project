@@ -18,7 +18,7 @@
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 #
 ###############################################################################
-__author__ = 'Maciej Kamiński Politechnika Wrocławska'
+__author__ = 'Maciej Kamiński Politechnika Wrocławska, Wawrzyniec Zipser, Tymon Dmochowski, Agnieszka Kriesel, Monika Totczyk'
 
 from os import path
 from PyQt4.QtGui import QIcon,QMessageBox
