@@ -55,4 +55,3 @@ class RoadProjectPlugin(object):
         """
         for action in self.menu_actions:
             self.iface.removePluginMenu(self.plugin_menu_entry,action)
-OD
