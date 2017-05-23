@@ -25,7 +25,7 @@ from PyQt4.QtGui import QIcon,QAction,QMessageBox,QApplication
 from PyQt4.QtCore import Qt,QBasicTimer
 from os import path
 #from maindialog import MongoConnectorDialog
-#from qgis.core import QgsMapLayerRegistry
+from qgis.core import *
 
 class Action1(QAction):
     """
@@ -45,6 +45,18 @@ class Action1(QAction):
         Just show/dock Widget/Plugin
         """
         print("DEBUG INFORMATION")
+        
+        line_layers=[]
+        all_layers=QgsMapLayerRegistry.instance().mapLayers()
+        print(all_layers)
+        for layer_key in all_layers:
+            print(layer_key)
+            layer=all_layers[layer_key]
+            print(layer.type(),layer.geometryType())
+            if layer.type()==QgsMapLayer.VectorLayer and layer.geometryType()==QGis.Line:
+                 print("I found Line layer")
+                 line_layers.append(layer)
+        print(line_layers)
 
         QMessageBox.information(self.plugin.iface.mainWindow(),
                 "Simple Title",

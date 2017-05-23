@@ -30,7 +30,7 @@ class RoadProjectPlugin(object):
     def __init__(self,iface):
         self.iface=iface
         self.plugin_path=path.dirname(path.abspath(__file__))
-        self.plugin_menu_entry="&ExamplePlugin"
+        self.plugin_menu_entry="&Road Project"
         self.menu_actions=[]
         # test requirements
 
