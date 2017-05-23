@@ -1,20 +1,20 @@
 [general]
-name=RoadProjectPlugin
+name=Road Project
 description=description rather short.
 about = Detailed.
 	Multiline.
 	Description.
 	As long as possible.
-category= Choose proper category.
+category= vector.
 version=1.0.0
 qgisMinimumVersion=2.8
 icon=images/ikona.svg
 author=Maciej Kamiński Politechnika Wrocławska
 email=kaminski.maciej@gmail.com
-tags= Choose some tags, split with commas
-homepage=https://github.com/mk45/gplp
-tracker=https://github.com/mk45/gplp/issues
-repository=https://github.com/mk45/gplp
+tags= road, project, qgis
+homepage=https://github.com/mk45/road_project
+tracker=https://github.com/mk45/road_project/issues
+repository=https://github.com/mk45/road_project
 experimental=True
 deprecated=False
 changelog=Version 1.0.0
