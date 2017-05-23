@@ -18,7 +18,7 @@
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 #
 ###############################################################################
-__author__ = 'Maciej Kamiński Politechnika Wrocławska'
+__author__ = 'Maciej Kamiński Politechnika Wrocławska, Wawrzyniec Zipser, Tymon Dmochowski, Agnieszka Kriesel, Monika Totczyk'
 
 from os import path
 from PyQt4.QtGui import QIcon,QMessageBox
@@ -30,7 +30,7 @@ class RoadProjectPlugin(object):
     def __init__(self,iface):
         self.iface=iface
         self.plugin_path=path.dirname(path.abspath(__file__))
-        self.plugin_menu_entry="&ExamplePlugin"
+        self.plugin_menu_entry="&Road Project"
         self.menu_actions=[]
         # test requirements
 
