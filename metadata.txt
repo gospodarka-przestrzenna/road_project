@@ -5,6 +5,7 @@ about = Detailed.
 	Multiline.
 	Description.
 	As long as possible.
+	
 category= vector.
 version=1.0.0
 qgisMinimumVersion=2.8
