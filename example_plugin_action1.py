@@ -24,8 +24,8 @@ __author__ = 'Maciej Kamiński Politechnika Wrocławska, Wawrzyniec Zipser, Tymo
 from PyQt4.QtGui import QIcon,QAction,QMessageBox,QApplication
 from PyQt4.QtCore import Qt,QBasicTimer
 from os import path
-#from maindialog import MongoConnectorDialog
 from qgis.core import *
+from dialog import Dialog
 
 class Action1(QAction):
     """
@@ -45,7 +45,9 @@ class Action1(QAction):
         Just show/dock Widget/Plugin
         """
         print("DEBUG INFORMATION")
-        
+        self.dlg=Dialog()
+        self.dlg.buttonBox.clicked.connect(self.cliked)
+
         line_layers=[]
         all_layers=QgsMapLayerRegistry.instance().mapLayers()
         print(all_layers)
@@ -63,3 +65,6 @@ class Action1(QAction):
                 "Create polygons based on line layer of roads adding specific width depending on the road type",
                 QMessageBox.Ok
                 )
+
+    def cliked(self,Button):
+        print("Usłyszał")
