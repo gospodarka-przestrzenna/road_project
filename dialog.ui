@@ -39,7 +39,7 @@
     </widget>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,1">
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0">
      <item>
       <widget class="QLabel" name="ComboDesc">
        <property name="maximumSize">
@@ -54,17 +54,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QComboBox" name="LayersCombo">
-       <property name="toolTip">
-        <string>Choose Layer</string>
-       </property>
-       <property name="statusTip">
-        <string/>
-       </property>
-       <property name="currentText">
-        <string/>
-       </property>
-      </widget>
+      <widget class="QComboBox" name="comboBox"/>
      </item>
     </layout>
    </item>
