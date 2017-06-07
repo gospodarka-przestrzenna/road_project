@@ -46,7 +46,11 @@ class Action1(QAction):
         """
         print("DEBUG INFORMATION")
         self.dlg=Dialog()
-        self.dlg.buttonBox.clicked.connect(self.cliked)
+        self.dlg.buttonBox.accepted.connect(self.ok_cliked)
+        self.dlg.buttonBox.rejected.connect(self.no_cliked)
+
+        self.dlg.show()
+
 
         line_layers=[]
         all_layers=QgsMapLayerRegistry.instance().mapLayers()
@@ -60,11 +64,9 @@ class Action1(QAction):
                  line_layers.append(layer)
         print(line_layers)
 
-        QMessageBox.information(self.plugin.iface.mainWindow(),
-                "Widen Roads",
-                "Create polygons based on line layer of roads adding specific width depending on the road type",
-                QMessageBox.Ok
-                )
 
-    def cliked(self,Button):
-        print("Usłyszał")
+    def ok_cliked(self):
+        print("OK")
+
+    def no_cliked(self):
+        print("NO")
